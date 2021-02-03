@@ -1,3 +1,39 @@
 .mainBody {
     border: 1px solid black;
+    margin: 10px;
+}
+
+.aboutUs {
+    background-image: url(https://cdn.shopify.com/s/files/1/0525/6226/4243/files/red-and-blues-create-a-marble-effect_1944x.jpg?v=1611513194);
+    margin: auto;
+    height: 300px;
+}
+
+.aboutUs h3 {
+    color: red;
+    margin: 5px;
+}
+
+#aboutUsText {
+    color: white;
+    font-size: large;
+    margin: 10px;
+}
+
+.bySize {
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.newArrivals {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.card {
+    margin: 2px;
+}
+
+li {
+    float: right;
 }
