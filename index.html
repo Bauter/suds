@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--favicon goes here-->
-    <title>TWEAR</title>
+    <title>Vaikuntha Dye</title>
 
     <!--Links and script tags here-->
 
@@ -20,26 +20,134 @@
     <!--CSS-->
     <link rel="stylesheet" href="assets/style.css">
 
+    <!-- Popper
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script> -->
+
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
+  
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cart</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Shop
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Vaikuntha</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Twear by Eric</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Tie-dye by Sean</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
     <div class="header">
         <!--Header / Jumbotron-->
+        <h1>Vaikuntha Dye</h1>
+    </div>
+    
+
+    <div class="mainBody">
+        <!--Main body-->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Jacob's Collection</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Vaikuntha Dye</h6>
+              <p class="card-text">Shirts, Bandanas, etc. Created by Jacob Boese (JDB777).</p>
+              <a href="#" class="card-link">Enter Shop</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Eric's Collection</h5>
+              <h6 class="card-subtitle mb-2 text-muted">T-WEAR</h6>
+              <p class="card-text">Shirts, bandanas, etc. Created by Eric Sudfield (T-Wear).</p>
+              <a href="#" class="card-link">Enter Shop</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Sean's Collection</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">SShirts, bandanas, etc. Created by Sean Auter.</p>
+              <a href="#" class="card-link">Enter Shop</a>
+            </div>
+          </div>
+
     </div>
 
-    <nav>
-        <!--Navigation-->
-    </nav>
+    <div class="newArrivals">
+        <h3>New Arrivals</h3>
+        <button id="viewAllNewArrivals">View All</button> <!--float to the right side of the page-->
 
-    <div>
-        <!--Main body-->
+        <!--Multiple cards with recent product-->
+    </div>
+
+    <div class="bySize">
+        <h3>Collections By Size</h3>
+
+        <!--Multiple cards for each size inside container-->
+
+        <div class="card" id="youthShirts">
+            <h5>Youth</h5>
+        </div>
+
+        <div class="card" id="smallShirts">
+            <h5>Small</h5>
+        </div>
+
+        <div class="card" id="mediumShirts">
+            <h5>Medium</h5>
+        </div>
+
+        <div class="card" id="largeShirts">
+            <h5>Large</h5>
+        </div>
+
+        <div class="card" id="xlShirts">
+            <h5>XL</h5>
+        </div>
+
+        <div class="card" id="xxlShirts">
+            <h5>XXL</h5>
+        </div>
+    </div>
+
+    <div class="aboutUs">
+        <h3>About Us</h3>
+        <p>Jacob, Eric, and Sean, all from Southeastern Wisconsin met each other back in high school. Through love of art and tie dye they have decided to share their creations with the world.</p>
     </div>
 
     <footer>
-
+        <p>&#169;</p>
     </footer>
 
 </body>
