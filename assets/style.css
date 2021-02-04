@@ -1,5 +1,5 @@
 .mainBody {
-    border: 1px solid black;
+    
     margin: 10px;
 }
 
@@ -28,11 +28,11 @@
 
 .bySize {
     margin: 10px;
-    border: 1px solid black;
+    
 }
 
 .newArrivals {
-    border: 1px solid black;
+    
     margin: 10px;
 }
 
@@ -42,4 +42,22 @@
 
 li {
     float: right;
+}
+
+.card {
+    width: auto;
+}
+
+.navbar {
+    position:fixed !important;
+    z-index: 1;
+    width: 100%;
+}
+
+.navbar ul {
+    float:right !important;
+}
+
+.shirtImg {
+    height: 300px
 }
