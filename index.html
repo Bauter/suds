@@ -75,9 +75,9 @@
 
     <div class="mainBody container-fluid">
         <!--Main body-->
-        <div class="row">
-            <div class="col-sm">
-                <div class="card container shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+        <div class="row mt-2">
+            <div class="col-sm ">
+                <div class="card container shadow p-3 mb-5 bg-white rounded artist" style="width: 18rem;">
                     <div class="card-body">
                     <h5 class="card-title">Jacob's Collection</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Vaikuntha Dye</h6>
@@ -87,8 +87,8 @@
                 </div>
             </div>
 
-            <div class="col-sm">
-                <div class="card container shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+            <div class="col-sm ">
+                <div class="card container shadow p-3 mb-5 bg-white rounded artist" style="width: 18rem;">
                     <div class="card-body">
                     <h5 class="card-title">Eric's Collection</h5>
                     <h6 class="card-subtitle mb-2 text-muted">T-WEAR</h6>
@@ -99,7 +99,7 @@
             </div>
 
             <div class="col-sm">
-                <div class="card container shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <div class="card container shadow p-3 mb-5 bg-white rounded artist" style="width: 18rem;">
                     <div class="card-body">
                     <h5 class="card-title">Sean's Collection</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -123,9 +123,11 @@
             </div>
         </div>
 
+        <hr>
+
         <!--Multiple cards with recent product-->
         <div class="row newArrivalsThumbnails">
-            <div class="card bg-dark text-white rounded faded" style="width: 18rem;">
+            <div class="card bg-dark text-white rounded shadow-lg  faded" style="width: 18rem;">
                 <img class="shirtImg card-img" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/1214fd80-6c93-4941-8e14-3b75985bb025_900x.jpg?v=1612039549">
                     
                 <div class="card-img-overlay">
@@ -135,7 +137,7 @@
                 </div>
             </div>
 
-            <div class="card bg-dark text-white rounded faded" style="width: 18rem;">
+            <div class="card bg-dark text-white rounded shadow-lg  faded" style="width: 18rem;">
                 <img class="shirtImg card-img" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/IMG_1508_1080x.jpg?v=1612039021">
                 
                 <div class="card-img-overlay">
@@ -145,7 +147,7 @@
                 </div>
             </div>
 
-            <div class="card bg-dark text-white  rounded faded" style="width: 18rem;">
+            <div class="card bg-dark text-white  rounded  shadow-lg faded" style="width: 18rem;">
                 <img class="shirtImg card-img"  src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/20210203_170426_1080x.jpg?v=1612393786">
 
                 <div class="card-img-overlay">    
@@ -155,7 +157,7 @@
                 </div>
             </div>
 
-            <div class="card bg-dark text-white  rounded faded" style="width: 18rem;">
+            <div class="card bg-dark text-white  rounded shadow-lg  faded" style="width: 18rem;">
                 <img class="shirtImg card-img" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/IMG_1471_1080x.jpg?v=1612038116">
                     
                 <div class="card-img-overlay">
@@ -165,7 +167,7 @@
                 </div>
             </div>
 
-            <div class="card bg-dark text-white rounded faded" style="width: 18rem;">
+            <div class="card bg-dark text-white rounded shadow-lg  faded" style="width: 18rem;">
                 <img class="shirtImg card-img" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/IMG_1461_1080x.jpg?v=1612037942">
                     
                 <div class="card-img-overlay">
@@ -182,33 +184,40 @@
 
     </div>
 
-    <div class="bySize container mt-4">
+    <div class="bySize container-fluid mt-4">
         <div class="row">
-            <h3 class="m-2">Collections By Size</h3>
+            <h3 class="m-2 d-inline">Collections By Size</h3>
         </div>
 
+        <hr>
 
         <!--Multiple cards for each size inside container-->
         <div class="row bySizeThumbnails">
 
             <div class="col-md sizes">
-                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;" id="youthShirts">
-                    <img class="shirtImg" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/20210127_125356_1080x.jpg?v=1611773845">
-                    <h5>Youth</h5>
+                <div class="card bg-dark text-white shadow-lg  rounded" style="width: 18rem;" id="youthShirts">
+                    <img class="shirtImg card-img" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/20210127_125356_1080x.jpg?v=1611773845">
+                    <div class="card-img-overlay">
+                        <h5>Youth</h5>
+                    </div>
                 </div>
             </div>
 
             <div class="col-md sizes">
-                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;" id="smallShirts">
-                    <img class="shirtImg" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/20210131_095418_1080x.jpg?v=1612115832">
-                    <h5>Small</h5>
+                <div class="card bg-dark text-white shadow-lg rounded" style="width: 18rem;" id="smallShirts">
+                    <img class="shirtImg card-img" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/20210131_095418_1080x.jpg?v=1612115832">
+                    <div class="card-img-overlay">
+                        <h5>Small</h5>
+                    </div>
                 </div>
             </div>
 
             <div class="col-md sizes">
-                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;" id="mediumShirts">
-                    <img class="shirtImg" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/20210131_095716_1080x.jpg?v=1612117616">
-                    <h5>Medium</h5>
+                <div class="card bg-dark text-white shadow-lg rounded" style="width: 18rem;" id="mediumShirts">
+                    <img class="shirtImg card-img" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/20210131_095716_1080x.jpg?v=1612117616">
+                    <div class="card-img-overlay">
+                        <h5>Medium</h5>
+                    </div>
                 </div>
             </div>
         
@@ -217,32 +226,40 @@
         <div class="row">
 
             <div class="col-md sizes">
-                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;" id="largeShirts">
-                    <img class="shirtImg" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/20210131_150340_1080x.jpg?v=1612127207">
-                    <h5>Large</h5>
+                <div class="card bg-dark text-white shadow-lg  rounded" style="width: 18rem;" id="largeShirts">
+                    <img class="shirtImg card-img" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/20210131_150340_1080x.jpg?v=1612127207">
+                    <div class="card-img-overlay">
+                        <h5>Large</h5>
+                    </div>
                 </div>
             </div>
 
             <div class="col-md sizes">
-                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;" id="xlShirts">
-                    <img class="shirtImg" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/IMG_1511_1080x.jpg?v=1612039163">
-                    <h5>XL</h5>
+                <div class="card bg-dark text-white shadow-lg  rounded" style="width: 18rem;" id="xlShirts">
+                    <img class="shirtImg card-img" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/IMG_1511_1080x.jpg?v=1612039163">
+                    <div class="card-img-overlay">
+                        <h5>XL</h5>
+                    </div>
                 </div>
             </div>
 
             <div class="col-md sizes" >
-                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;" id="xxlShirts">
-                    <img class="shirtImg" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/20210127_153017_1080x.jpg?v=1611783166">
-                    <h5>XXL</h5>
+                <div class="card bg-dark text-white shadow-lg rounded" style="width: 18rem;" id="xxlShirts">
+                    <img class="shirtImg card-img" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/20210127_153017_1080x.jpg?v=1611783166">
+                    <div class="card-img-overlay">
+                        <h5>XXL</h5>
+                    </div>
                 </div>
             </div>
 
         </div>
     </div>
 
+    <br>
+
     <div class="aboutUs container-fluid">
-        <h3>About Us</h3>
-        <p id="aboutUsText">Jacob, Eric, and Sean, all from Southeastern Wisconsin <br> met each other back in high school. Through love of art and <br> tie dye they have decided to share their creations with the world.</p>
+        <h3 class="text-center mt-2">About Us</h3>
+        <p class="text-center" id="aboutUsText">Jacob, Eric, and Sean, all from Southeastern Wisconsin <br> met each other back in high school. Through love of art and <br> tie dye they have decided to share their creations with the world.</p>
     </div>
 
     <footer class="container-fluid">

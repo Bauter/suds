@@ -17,9 +17,10 @@
     height: 300px;
 }
 
-h3.aboutUs {
-    color: red;
+h3 {
+    color: rgb(231, 39, 206);
     margin: 5px;
+    padding: 10px 10px;
 }
 
 #aboutUsText {
@@ -28,9 +29,13 @@ h3.aboutUs {
     margin: 10px;
 }
 
+.bySize {
+    
+}
+
 .bySizeThumbnails {
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 10px;
     
 }
@@ -74,6 +79,13 @@ li {
 
 button {
     height: auto;
+    
+}
+
+a:hover, button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    transition: transform 150ms;
 }
 
 #newArrivalsHeader {
@@ -98,4 +110,42 @@ body {
 .faded {
     background-color: transparent;
     padding:0% !important;
+}
+
+.card-img-overlay:hover {
+    color:red;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.sizes {
+    display: flex;
+    justify-content: center;
+}
+
+.sizes:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    transition: transform 150ms;
+    
+}
+
+h5:hover {
+    color: red;
+}
+
+.faded:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    transition: transform 150ms;
+    
+}
+
+.artist:hover {
+    border: violet 2px solid;
+    box-shadow: 3px 3px 5px 6px violet;
+}
+
+.card.bg-dark:hover {
+    opacity: .6;
 }
