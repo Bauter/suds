@@ -69,7 +69,7 @@
 
     <div class="header container-fluid">
         <!--Header / Jumbotron-->
-        <img class="container-fluid" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/files/Final_1944x.jpg?v=1611785555">
+        <img class="container-fluid" id="lotusImg" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/files/Final_1944x.jpg?v=1611785555">
     </div>
     
 
@@ -82,7 +82,7 @@
                     <h5 class="card-title">Jacob's Collection</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Vaikuntha Dye</h6>
                     <p class="card-text">Shirts, Bandanas, etc. Created by Jacob Boese (JDB777).</p>
-                    <a href="#" class="card-link">Enter Shop</a>
+                    <a href="#" class="btn btn-outline-dark justify-content-center">Enter Shop</a>
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@
                     <h5 class="card-title">Eric's Collection</h5>
                     <h6 class="card-subtitle mb-2 text-muted">T-WEAR</h6>
                     <p class="card-text">Shirts, bandanas, etc. Created by Eric Sudfield (T-Wear).</p>
-                    <a href="#" class="card-link">Enter Shop</a>
+                    <a href="#" class="btn btn-outline-dark justify-content-center">Enter Shop</a>
                     </div>
                 </div>
             </div>
@@ -104,7 +104,7 @@
                     <h5 class="card-title">Sean's Collection</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                     <p class="card-text">SShirts, bandanas, etc. Created by Sean Auter.</p>
-                    <a href="#" class="card-link">Enter Shop</a>
+                    <a href="#" class="btn btn-outline-dark justify-content-center">Enter Shop</a>
                     </div>
                 </div>
             </div>
@@ -114,76 +114,99 @@
     </div>
 
     <div class="newArrivals container-fluid">
-        <h3 class="m-2 d-inline " id="newArrivalText">New Arrivals</h3>
-        <button class="m-2 float-end"id="viewAllNewArrivals">View All</button> <!--float to the right side of the page-->
-
-        <!--Multiple cards with recent product-->
-        <div class="row m-2 container">
-            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-                <div class="card-body">
-                    <img>
-                    <p>New!</p>
-                </div>
-                <p>Item text goes here!</p>
+        <div class="row" id="newArrivalsHeader">
+            <div class="col-sm">
+                <h3 class="m-2  " id="newArrivalsText">New Arrivals</h3>
             </div>
-
-            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-                <div class="card-body">
-                    <img>
-                <p>New!</p>
-                </div>
-                <p>Item text goes here!</p>
-            </div>
-
-            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-                <div class="card-body">
-                    <img>
-                    <p>New!</p>
-                </div>
-                <p>Item text goes here!</p>
-            </div>
-
-            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-                <div class="card-body">
-                    <img>
-                    <p>New!</p>
-                </div>
-                <p>Item text goes here!</p>
-            </div>
-
-            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-                <div class="card-body">
-                    <img>
-                    <p>New!</p>
-                </div>
-                <p>Item text goes here!</p>
+            <div class="col-sm">
+                <button type="button" class="btn btn-outline-dark m-2 "id="viewAllNewArrivals">View All</button> <!--float to the right side of the page-->
             </div>
         </div>
 
+        <!--Multiple cards with recent product-->
+        <div class="row newArrivalsThumbnails">
+            <div class="card bg-dark text-white rounded faded" style="width: 18rem;">
+                <img class="shirtImg card-img" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/1214fd80-6c93-4941-8e14-3b75985bb025_900x.jpg?v=1612039549">
+                    
+                <div class="card-img-overlay">
+                    <h6>New!</h6>
+                    <p>Tapestry / Rainbow Gateway</p>
+                    <p>$60.00</p>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-white rounded faded" style="width: 18rem;">
+                <img class="shirtImg card-img" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/IMG_1508_1080x.jpg?v=1612039021">
+                
+                <div class="card-img-overlay">
+                    <h6>New!</h6>
+                    <p>Short Sleeve T-Shirt #172 Large</p>
+                    <p>$25.00</p>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-white  rounded faded" style="width: 18rem;">
+                <img class="shirtImg card-img"  src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/20210203_170426_1080x.jpg?v=1612393786">
+
+                <div class="card-img-overlay">    
+                    <h6>New!</h6>
+                    <p>XL "Ecstatic Bliss" Unisex Handmade Tie Dye Shirt #JB0350 (JDB)</p>
+                    <p>$30.00</p>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-white  rounded faded" style="width: 18rem;">
+                <img class="shirtImg card-img" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/IMG_1471_1080x.jpg?v=1612038116">
+                    
+                <div class="card-img-overlay">
+                    <h6>New!</h6>
+                    <p>Short Sleeve T-Shirt #1459 Medium</p>
+                    <p>$25.00</p>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-white rounded faded" style="width: 18rem;">
+                <img class="shirtImg card-img" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/IMG_1461_1080x.jpg?v=1612037942">
+                    
+                <div class="card-img-overlay">
+                    <h6>New!</h6>
+                    <p>Short Sleeve T-Shirt #1457 Medium</p>
+                    <p>$25.00</p>
+                </div>
+            </div>
+
+            
+        </div>
+        <br>
+        <br>
+
     </div>
 
-    <div class="bySize container-fluid">
-        <h3 class="m-2">Collections By Size</h3>
+    <div class="bySize container mt-4">
+        <div class="row">
+            <h3 class="m-2">Collections By Size</h3>
+        </div>
+
 
         <!--Multiple cards for each size inside container-->
-        <div class="row">
+        <div class="row bySizeThumbnails">
 
-            <div class="col-md">
-                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 90%;" id="youthShirts">
+            <div class="col-md sizes">
+                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;" id="youthShirts">
                     <img class="shirtImg" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/20210127_125356_1080x.jpg?v=1611773845">
                     <h5>Youth</h5>
                 </div>
             </div>
 
-            <div class="col-md">
-                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 90%;" id="smallShirts">
+            <div class="col-md sizes">
+                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;" id="smallShirts">
                     <img class="shirtImg" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/20210131_095418_1080x.jpg?v=1612115832">
                     <h5>Small</h5>
                 </div>
             </div>
 
-            <div class="col-md">
-                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 90%;" id="mediumShirts">
+            <div class="col-md sizes">
+                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;" id="mediumShirts">
                     <img class="shirtImg" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/20210131_095716_1080x.jpg?v=1612117616">
                     <h5>Medium</h5>
                 </div>
@@ -193,22 +216,22 @@
 
         <div class="row">
 
-            <div class="col-md">
-                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 90%;" id="largeShirts">
+            <div class="col-md sizes">
+                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;" id="largeShirts">
                     <img class="shirtImg" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/20210131_150340_1080x.jpg?v=1612127207">
                     <h5>Large</h5>
                 </div>
             </div>
 
-            <div class="col-md">
-                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 90%;" id="xlShirts">
+            <div class="col-md sizes">
+                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;" id="xlShirts">
                     <img class="shirtImg" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/IMG_1511_1080x.jpg?v=1612039163">
                     <h5>XL</h5>
                 </div>
             </div>
 
-            <div class="col-md">
-                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 90%;" id="xxlShirts">
+            <div class="col-md sizes" >
+                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;" id="xxlShirts">
                     <img class="shirtImg" src="https://cdn.shopify.com/s/files/1/0525/6226/4243/products/20210127_153017_1080x.jpg?v=1611783166">
                     <h5>XXL</h5>
                 </div>
