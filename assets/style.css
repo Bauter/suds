@@ -112,6 +112,11 @@ body {
     padding:0% !important;
 }
 
+.card-image-overlay {
+    display: inline-flex;
+   
+}
+
 .card-img-overlay:hover {
     color:red;
     font-weight: bolder;
@@ -132,6 +137,7 @@ body {
 
 h5:hover {
     color: red;
+    display: inline-flex;
 }
 
 .faded:hover {
@@ -146,6 +152,3 @@ h5:hover {
     box-shadow: 3px 3px 5px 6px violet;
 }
 
-.card.bg-dark:hover {
-    opacity: .6;
-}
